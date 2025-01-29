@@ -1,23 +1,27 @@
-import Movie from './components/Movie';
-import { dummy } from './movieDummy';
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import React from 'react';
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Celebrity from './pages/Celebrity';
 import Home from './pages/Home';
 import Movies from './pages/Movies';
 import Tv from './pages/Tv';
-
+import NotFound from './pages/NotFound';
+import Header from "./components/Header";
+import Movie from './components/Movie';
+import { dummy } from './movieDummy';
+import MovieDetail from './pages/MovieDetail';
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" elemet={<Home></Home>} />
-        <Route path="/movie" elemet={<Movies />} />
-        <Route path="/tv" elemet={<Tv />} />
-        <Route path="/person" elemet={<Celebrity />} />
-        <Route path="/*" elemet={<NotFound />} />
-      </Routes>
-      {/*push test*/}
-    </BrowserRouter>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/movie" element={<Movies />} />
+          <Route path="/movie/:title" element={<MovieDetail />} />
+          <Route path="/tv" element={<Tv />} />
+          <Route path="/person" element={<Celebrity />} />
+          <Route path="/*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
   );
 }
 
