@@ -16,6 +16,7 @@ function App() {
         <Route path="/person" elemet={<Celebrity />} />
         <Route path="/*" elemet={<NotFound />} />
       </Routes>
+      {/*push test*/}
     </BrowserRouter>
   );
 }
