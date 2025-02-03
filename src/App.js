@@ -10,6 +10,7 @@ import Movie from './components/Movie';
 import { dummy } from './movieDummy';
 import MovieDetail from './pages/MovieDetail';
 import { peopleD } from './peopleDummy';
+import CelebrityDetail from './pages/CelebrityDetail';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/movie/:title" element={<MovieDetail />} />
           <Route path="/tv" element={<Tv />} />
           <Route path="/person" element={<Celebrity />} />
+          <Route path="/person/:id" element={<CelebrityDetail />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -193,3 +193,34 @@ body{
     text-decoration: underline;
     color: rgb(32, 32, 32);
 }
+
+/* 여기부터 프로필 상세페이지 */
+.celebrity-detail-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px; /* 포스터와 정보 사이 간격 */
+    padding: 50px;
+  }
+  
+.celebrity-detail-poster {
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 13px rgba(18, 18, 18, 0.2);
+}
+
+.celebrity-detail-info {
+    background-color: white;
+    box-shadow: 5px 5px 13px rgba(18, 18, 18, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    height: 390px;
+    text-align: left;
+}
+
+.celebrity-detail-name {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
