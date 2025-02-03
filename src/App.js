@@ -9,6 +9,8 @@ import Header from "./components/Header";
 import Movie from './components/Movie';
 import { dummy } from './movieDummy';
 import MovieDetail from './pages/MovieDetail';
+import { peopleD } from './peopleDummy';
+
 function App() {
   return (
       <BrowserRouter>
