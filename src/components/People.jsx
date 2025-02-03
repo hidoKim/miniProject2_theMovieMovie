@@ -6,7 +6,7 @@ export const IMG_BASE_URL_PEOPLE = "https://media.themoviedb.org/t/p/w470_and_h4
 export default function People(props) {
   const navigate = useNavigate();
   const onClickPeopleItem = () => {
-    navigate(`/person/${props.title}`, {
+    navigate(`/person/${props.name}`, {
       state: props
     })
   }

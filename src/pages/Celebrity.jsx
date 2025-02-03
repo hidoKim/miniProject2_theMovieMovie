@@ -10,6 +10,7 @@ export default function Celebrity() {
           <People
             name={item.name}
             profile_path={item.profile_path}
+            known_for={item.known_for.map(show => show.name || "제목 정보 없음")}
           />
         );
         })}
