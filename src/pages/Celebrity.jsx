@@ -7,11 +7,12 @@ export default function Celebrity() {
     <div className='celebrity-container' style={{fontSize: '32px'}}>
         {peopleD.results.map((item) => {
          return(
-          <People
-            name={item.name}
-            profile_path={item.profile_path}
-            known_for={item.known_for.map(show => show.name || "제목 정보 없음")}
-          />
+            <People
+                key={item.id}
+                name={item.name}
+                profile_path={item.profile_path}
+                known_for={item.known_for} // 전체 배열 전달
+            />
         );
         })}
     </div>

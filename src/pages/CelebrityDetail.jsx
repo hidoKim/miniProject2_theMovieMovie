@@ -5,8 +5,8 @@ import { IMG_BASE_URL_PEOPLE } from '../components/People';
 export default function CelebrityDetail() {
     const { name } = useParams();
     const { state } = useLocation(); 
-    const knownForTitles = state.known_for?.map(show => show.name || "제목 정보 없음") || [];
-  return (
+    const IMG_BASE_URL_MOVIES = 'https://image.tmdb.org/t/p/w200'
+    return (
     <div className='celebrity-detail-container'>
       <img 
           className='celebrity-detail-poster'
@@ -15,12 +15,23 @@ export default function CelebrityDetail() {
       />
       <div className='celebrity-detail-info'>
           <h1 className='celebrity-detail-name'>{state.name}</h1>
-          <h2>출연작</h2>
-          <ul className='celebrity-detail-movies'>
-              {knownForTitles.map((title, index) => (
-                  <li key={index}>{title}</li>
+          <h2>대표작품</h2>
+          <div className='celebrity-detail-movies'>
+              {state.known_for_list.map((show, index) => (
+                  <div key={index} className='c-d-movie-item'>
+                      {show.poster_path ? (
+                        <img 
+                          className='c-d-movie-poster' 
+                          src={IMG_BASE_URL_MOVIES + show.poster_path}
+                          alt={show.title} 
+                        />
+                      ) : (
+                        <div className='c-d-no-poster'>포스터 없음</div>
+                      )}
+                      <p className='c-d-movie-title'>{show.title}</p>
+                  </div>
               ))}
-          </ul>
+          </div>
       </div>
     </div>
   );
