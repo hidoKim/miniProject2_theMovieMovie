@@ -120,7 +120,6 @@ body{
   padding: 30px;
   border-radius: 10px;
   max-width: 500px;
-  height: 390px;
   text-align: left;
 }
 
@@ -196,6 +195,7 @@ body{
 
 /* 여기부터 프로필 상세페이지 */
 .celebrity-detail-container {
+    flex-wrap: wrap;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -204,7 +204,7 @@ body{
   }
   
 .celebrity-detail-poster {
-    height: 450px;
+    height: 470px;
     border-radius: 10px;
     box-shadow: 5px 5px 13px rgba(18, 18, 18, 0.2);
 }
@@ -214,8 +214,7 @@ body{
     box-shadow: 5px 5px 13px rgba(18, 18, 18, 0.2);
     padding: 30px;
     border-radius: 10px;
-    max-width: 500px;
-    height: 390px;
+    max-width: 700px;
     text-align: left;
 }
 
@@ -224,7 +223,11 @@ body{
     font-weight: bold;
     margin-bottom: 10px;
   }
-
+.celebrity-detail-original-name{
+    font-size: 16px;
+    font-weight: lighter;
+    color: rgb(79, 79, 79);
+}
 .celebrity-detail-info h2{
     color: rgb(38, 120, 117);
     font-weight: bold;
@@ -234,17 +237,22 @@ body{
 
 .celebrity-detail-movies {
     display: flex;
-    flex-wrap: wrap;
     gap: 16px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .c-d-movie-item {
-    text-align: center;
-    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150;
 }
 
 .c-d-movie-poster {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
@@ -265,5 +273,8 @@ body{
     padding-top: 13px;
     font-size: 14px;
     font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
 }
 

@@ -11,8 +11,8 @@ export default function People(props) {
       state: {
         ...props, 
         known_for_list: props.known_for?.map(show => ({
-          title: show?.name || show?.title || "제목 정보 없음",
-          poster_path: show?.poster_path || null
+        title: show?.name || show?.title || "제목 정보 없음",
+        poster_path: show?.poster_path || null
         })) || [] 
       }
     });

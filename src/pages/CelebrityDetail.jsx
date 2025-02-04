@@ -6,6 +6,7 @@ export default function CelebrityDetail() {
     const { name } = useParams();
     const { state } = useLocation(); 
     const IMG_BASE_URL_MOVIES = 'https://image.tmdb.org/t/p/w200'
+
     return (
     <div className='celebrity-detail-container'>
       <img 
@@ -15,6 +16,7 @@ export default function CelebrityDetail() {
       />
       <div className='celebrity-detail-info'>
           <h1 className='celebrity-detail-name'>{state.name}</h1>
+          <p className='celebrity-detail-original-name'>({state.original_name})</p>
           <h2>대표작품</h2>
           <div className='celebrity-detail-movies'>
               {state.known_for_list.map((show, index) => (
