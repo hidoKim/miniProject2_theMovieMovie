@@ -12,6 +12,7 @@ export default function Celebrity() {
                 name={item.name}
                 profile_path={item.profile_path}
                 known_for={item.known_for} // 전체 배열 전달
+                original_name={item.original_name}
             />
         );
         })}
