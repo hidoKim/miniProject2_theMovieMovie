@@ -224,3 +224,46 @@ body{
     font-weight: bold;
     margin-bottom: 10px;
   }
+
+.celebrity-detail-info h2{
+    color: rgb(38, 120, 117);
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.celebrity-detail-movies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.c-d-movie-item {
+    text-align: center;
+    width: 150px;
+}
+
+.c-d-movie-poster {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.c-d-no-poster {
+    width: 150px;
+    height: 225px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #555;
+    font-size: 14px;
+}
+
+.c-d-movie-title {
+    color: rgb(62, 62, 62);
+    padding-top: 13px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
