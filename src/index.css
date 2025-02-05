@@ -278,3 +278,100 @@ body{
     width: 100%;
 }
 
+/*tv*/
+.tvs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.tv-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    width: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(88, 88, 88);
+
+}
+
+.tv-container img{
+    border-radius: 10px 10px 0px 0px;
+    max-width: 100%;
+}
+
+.tv-info{
+    font-size: medium;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tv-info h4{
+    color: rgb(53, 53, 53);
+    margin : 0;
+}
+.tv-info h4:hover{
+    margin : 0;
+    text-decoration: underline;
+    color: rgb(32, 32, 32);
+}
+.tv-info span{
+    font-weight: 600;
+    color: #f39c12;
+    margin-left: 10px;
+}
+
+/*여기부터 tv 상세 페이지*/
+.tv-detail-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px; /* 포스터와 정보 사이 간격 */
+    padding: 50px;
+  }
+  
+  .tv-detail-poster {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 13px rgba(18, 18, 18, 0.2);
+  }
+  
+  .tv-detail-info {
+    background-color: white;
+    box-shadow: 5px 5px 13px rgba(18, 18, 18, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .tv-detail-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .tv-detail-date {
+      margin-bottom: 15px;
+      font-weight: 400;
+  }
+  
+  .tv-detail-rating {
+    font-size: 20px;
+    color: #f39c12;
+    margin-bottom: 15px;
+  }
+  
+  .tv-detail-overview {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2d2d2d;
+    white-space: pre-wrap;
+  }
+    
