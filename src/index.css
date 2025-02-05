@@ -374,4 +374,59 @@ body{
     color: #2d2d2d;
     white-space: pre-wrap;
   }
-    
+
+/* Home */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.home-container h2 {
+    font-size: 2.5rem;
+    color: rgb(235, 235, 235);
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-shadow: 5px 5px 13px rgba(18, 18, 18, 0.2);    
+}
+
+/* Top Movie Grid */
+.top-movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual Top Movie Item */
+.top-movie-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 13px rgba(18, 18, 18, 0.2);    
+    transition: transform 0.3s ease;
+}
+
+.top-movie-item:hover {
+    transform: translateY(-5px);
+}
+
+.top-movie-poster {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.top-movie-title {
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+}
