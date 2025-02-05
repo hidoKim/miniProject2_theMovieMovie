@@ -22,7 +22,7 @@ function App() {
           <Route path="/movie" element={<Movies />} />
           <Route path="/movie/:title" element={<MovieDetail />} />
           <Route path="/tv" element={<Tv />} />
-          <Route path="/tv:name" element={<TvDetail />}>
+          <Route path="/tv/:name" element={<TvDetail />} />
           <Route path="/person" element={<Celebrity />} />
           <Route path="/person/:id" element={<CelebrityDetail />} />
           <Route path="/*" element={<NotFound />} />

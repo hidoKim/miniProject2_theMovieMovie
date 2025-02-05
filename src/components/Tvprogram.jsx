@@ -12,7 +12,7 @@ export default function Tvprogram(props) {
     }
   return (
     <div className='tv-container' onClick={onClickTvItem}>
-        <img src={IMG_BASE_TV_URL + props.poster_path} alt='프로그램 포스터터'/>
+        <img src={IMG_BASE_TV_URL + props.poster_path} alt='프로그램 포스터'/>
         <div className='tv-info'>
             <h4>{props.name}</h4>
             <span>{props.vote_average.toFixed(1)}</span>
